@@ -6,11 +6,6 @@ require('config.php');
  * Date: 18/07/2016
  * Time: 10:46 AM
  */
-
-function testFunction($data) {
-    print("new functions");
-}
-
 function insertRecordForDate($date, $start, $finish) {
 
     $query = mysqli_query($GLOBALS['connect'], "INSERT INTO `hours` (`date`, `start`, `finish`) VALUES('$date', '$start', '$finish')");
