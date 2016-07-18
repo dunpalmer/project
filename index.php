@@ -17,8 +17,11 @@ if(!hasRecordForDate($today)) {
     //Input hours worked for today
     if(!insertRecordForDate($today, $startTime, $endTime)) {
         print("Couldn't add record for today: <br>" . mysqli_error($connect));
+<<<<<<< HEAD
     } else {
         print("Added Record!");
+=======
+>>>>>>> parent of 4a0908d... Test
     }
 }
 ?>
