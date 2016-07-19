@@ -8,8 +8,6 @@ require('config.php');
  */
 function insertRecordForDate($date, $start, $finish) {
 
-    $BROKEIT = null;
-    
     $query = mysqli_query($GLOBALS['connect'], "INSERT INTO `hours` (`date`, `start`, `finish`) VALUES('$date', '$start', '$finish')");
 
     if($query) {
